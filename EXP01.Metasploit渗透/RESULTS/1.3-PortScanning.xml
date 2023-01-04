@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Apr 27 06:24:39 2022 as: nmap -Pn -sV -p 1-65535 -oX 1.3-PortScanning.xml 192.168.43.38 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sV -p 1-65535 -oX 1.3-PortScanning.xml 192.168.43.38" start="1651055079" startstr="Wed Apr 27 06:24:39 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.38" addrtype="ipv4"/>
+<address addr="90:78:41:CE:D5:47" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1651055080" endtime="1651055250"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.38" addrtype="ipv4"/>
+<address addr="90:78:41:CE:D5:47" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65505">
+<extrareasons reason="reset" count="65505" proto="tcp" ports="1-20,24,26-52,54-79,81-110,112-138,140-444,446-511,515-1098,1100-1523,1525-2048,2050-2120,2122-3305,3307-3631,3633-5431,5433-5899,5901-5999,6001-6666,6668-6696,6698-8008,8010-8179,8181-8786,8788-36971,36973-42190,42192-44156,44158-48065,48067-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="vsftpd" version="2.3.4" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.4</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" product="Linux telnetd" ostype="Linux" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" product="Postfix smtpd" hostname=" metasploitable.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="ISC BIND" version="9.4.2" method="probed" conf="10"><cpe>cpe:/a:isc:bind:9.4.2</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.8" extrainfo="(Ubuntu) DAV/2" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.8</cpe></service></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="exec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1099"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="java-rmi" product="GNU Classpath grmiregistry" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="1524"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="bindshell" product="Metasploitable root shell" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nfs" version="2-4" extrainfo="RPC #100003" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="ProFTPD" version="1.3.1" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.1</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MySQL" version="5.0.51a-3ubuntu5" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.0.51a-3ubuntu5</cpe></service></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="distccd" product="distccd" version="v1" extrainfo="(GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4)" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="postgresql" product="PostgreSQL DB" version="8.3.0 - 8.3.7" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql:8.3</cpe></service></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" product="VNC" extrainfo="protocol 3.3" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11" extrainfo="access denied" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="6667"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="irc" product="UnrealIRCd" hostname="irc.Metasploitable.LAN" method="probed" conf="10"><cpe>cpe:/a:unrealircd:unrealircd</cpe></service></port>
+<port protocol="tcp" portid="6697"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="irc" product="UnrealIRCd" hostname="irc.Metasploitable.LAN" method="probed" conf="10"><cpe>cpe:/a:unrealircd:unrealircd</cpe></service></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="8180"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service></port>
+<port protocol="tcp" portid="8787"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="drb" product="Ruby DRb RMI" extrainfo="Ruby 1.8; path /usr/lib/ruby/1.8/drb" method="probed" conf="10"><cpe>cpe:/a:ruby-lang:ruby:1.8</cpe></service></port>
+<port protocol="tcp" portid="36972"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="java-rmi" product="GNU Classpath grmiregistry" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="42191"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="44157"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nlockmgr" version="1-4" extrainfo="RPC #100021" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="48066"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<times srtt="8240" rttvar="441" to="100000"/>
+</host>
+<runstats><finished time="1651055250" timestr="Wed Apr 27 06:27:30 2022" summary="Nmap done at Wed Apr 27 06:27:30 2022; 1 IP address (1 host up) scanned in 171.48 seconds" elapsed="171.48" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

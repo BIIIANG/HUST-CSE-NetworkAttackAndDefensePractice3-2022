@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export IMG_NAME=wheezy
+
+ssh -i ${IMG_NAME}.id_rsa -p 10021 -o "StrictHostKeyChecking no" drill@localhost

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export KERNEL=linux-5.0-rc1
+export IMG_NAME=wheezy
+
+# -enable-kvm \
+qemu-system-x86_64 \
+  -kernel $KERNEL/arch/x86/boot/bzImage \
+  -append "console=ttyS0 root=/dev/sda debug earlyprintk=serial slub_debug=QUZ"\
+  -hda ${IMG_NAME}.img \
+  -net user,hostfwd=tcp::10021-:22 -net nic \
+  -nographic \
+  -smp 2 \
+  -m 512M -s

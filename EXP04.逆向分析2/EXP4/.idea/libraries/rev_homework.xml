@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rev_homework">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rev_homework.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

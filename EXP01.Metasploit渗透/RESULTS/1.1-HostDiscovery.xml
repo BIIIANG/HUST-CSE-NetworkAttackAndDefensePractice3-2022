@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Apr 27 06:22:55 2022 as: nmap -sn -oX 1.1-HostDiscovery.xml 192.168.43.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -oX 1.1-HostDiscovery.xml 192.168.43.0/24" start="1651054975" startstr="Wed Apr 27 06:22:55 2022" version="7.92" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.1" addrtype="ipv4"/>
+<address addr="96:F4:64:EC:BB:30" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<times srtt="12235" rttvar="12235" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.23" addrtype="ipv4"/>
+<address addr="90:78:41:CE:D5:47" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+<hostname name="DESKTOP-08876S0" type="PTR"/>
+</hostnames>
+<times srtt="12565" rttvar="12565" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.38" addrtype="ipv4"/>
+<address addr="90:78:41:CE:D5:47" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+<times srtt="10423" rttvar="10423" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.124" addrtype="ipv4"/>
+<address addr="00:0C:29:BE:4B:8B" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<times srtt="1305" rttvar="3816" to="100000"/>
+</host>
+<host><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.168" addrtype="ipv4"/>
+<address addr="34:13:E8:96:DF:E8" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+<hostname name="BIANG-LAPTOP" type="PTR"/>
+</hostnames>
+<times srtt="609" rttvar="1666" to="100000"/>
+</host>
+<host><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.43.97" addrtype="ipv4"/>
+<hostnames>
+<hostname name="kali" type="PTR"/>
+</hostnames>
+</host>
+<runstats><finished time="1651054977" timestr="Wed Apr 27 06:22:57 2022" summary="Nmap done at Wed Apr 27 06:22:57 2022; 256 IP addresses (6 hosts up) scanned in 2.33 seconds" elapsed="2.33" exit="success"/><hosts up="6" down="250" total="256"/>
+</runstats>
+</nmaprun>

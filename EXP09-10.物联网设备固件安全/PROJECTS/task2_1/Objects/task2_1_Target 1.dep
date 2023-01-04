@@ -1,0 +1,63 @@
+Dependencies for Project 'task2_1', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6180000::V6.18::ARMCLANG
+F (..\task2.c)(0x6295C277)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../KEIL-I./RTE/Device/CMSDK_CM4_FP-I./RTE/_Target_1-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Boards/ARM/V2M-MPS2/Common-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Device/CMSDK_CM4/Include-D__UVISION_VERSION="537" -D_RTE_ -DCMSDK_CM4_FP -D_RTE_-o ./objects/task2.o -MD)
+I (RTE\_Target_1\RTE_Components.h)(0x62950621)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\CMSDK_CM4_FP.h)(0x61DFD4E6)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\system_CMSDK_CM4.h)(0x61DFD4E6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\..\KEIL\task2a_23.h)(0x6294DD67)
+F (C:\Users\86131\Desktop\NADP3\KEIL\task2a_23.lib)(0x6294AA14)()
+F (..\task2a_23.h)(0x6294DD67)()
+F (C:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/CMSIS/Driver/USART_V2M-MPS2.c)(0x59F17248)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../KEIL-I./RTE/Device/CMSDK_CM4_FP-I./RTE/_Target_1-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Boards/ARM/V2M-MPS2/Common-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Device/CMSDK_CM4/Include-D__UVISION_VERSION="537" -D_RTE_ -DCMSDK_CM4_FP -D_RTE_-o ./objects/usart_v2m-mps2.o -MD)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\CMSIS\Driver\USART_V2M-MPS2.h)(0x59840214)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Driver\Include\Driver_USART.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Driver\Include\Driver_Common.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Boards\ARM\V2M-MPS2\Common\Device.h)(0x61D51D50)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\CMSDK_CM4_FP.h)(0x61DFD4E6)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\system_CMSDK_CM4.h)(0x61DFD4E6)
+I (RTE\Device\CMSDK_CM4_FP\RTE_Device.h)(0x6294C806)
+I (RTE\_Target_1\RTE_Components.h)(0x62950621)
+F (C:/Users/86131/AppData/Local/Arm/Packs/Keil/ARM_Compiler/1.7.2/Source/retarget_io.c)(0x584E29BE)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../KEIL-I./RTE/Device/CMSDK_CM4_FP-I./RTE/_Target_1-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Boards/ARM/V2M-MPS2/Common-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Device/CMSDK_CM4/Include-D__UVISION_VERSION="537" -D_RTE_ -DCMSDK_CM4_FP -D_RTE_-o ./objects/retarget_io.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x625260D6)
+I (C:\Keil_v5\ARM\ARMCLANG\include\rt_sys.h)(0x625260D8)
+I (RTE\_Target_1\RTE_Components.h)(0x62950621)
+F (RTE/Device/CMSDK_CM4_FP/RTE_Device.h)(0x6294C806)()
+F (RTE/Device/CMSDK_CM4_FP/ac6_arm.sct)(0x61DFD4E6)()
+F (RTE/Device/CMSDK_CM4_FP/startup_CMSDK_CM4.c)(0x61F2333E)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../KEIL-I./RTE/Device/CMSDK_CM4_FP-I./RTE/_Target_1-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Boards/ARM/V2M-MPS2/Common-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Device/CMSDK_CM4/Include-D__UVISION_VERSION="537" -D_RTE_ -DCMSDK_CM4_FP -D_RTE_-o ./objects/startup_cmsdk_cm4.o -MD)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\CMSDK_CM4_FP.h)(0x61DFD4E6)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\system_CMSDK_CM4.h)(0x61DFD4E6)
+F (RTE/Device/CMSDK_CM4_FP/system_CMSDK_CM4.c)(0x61DFD4E6)(-xc -std=c90 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../KEIL-I./RTE/Device/CMSDK_CM4_FP-I./RTE/_Target_1-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/86131/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Boards/ARM/V2M-MPS2/Common-IC:/Users/86131/AppData/Local/Arm/Packs/Keil/V2M-MPS2_CMx_BSP/1.8.0/Device/CMSDK_CM4/Include-D__UVISION_VERSION="537" -D_RTE_ -DCMSDK_CM4_FP -D_RTE_-o ./objects/system_cmsdk_cm4.o -MD)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\CMSDK_CM4_FP.h)(0x61DFD4E6)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm4.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F4ADE)
+I (C:\Users\86131\AppData\Local\Arm\Packs\Keil\V2M-MPS2_CMx_BSP\1.8.0\Device\CMSDK_CM4\Include\system_CMSDK_CM4.h)(0x61DFD4E6)

@@ -1,0 +1,11 @@
+--cpu=Cortex-M4.fp
+".\objects\task2.o"
+".\Src\task2a_23.lib"
+".\objects\usart_v2m-mps2.o"
+".\objects\retarget_io.o"
+".\objects\startup_cmsdk_cm4.o"
+".\objects\system_cmsdk_cm4.o"
+--strict --scatter ".\Src\RTOSDemo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\task2a.map" -o .\Objects\task2a.axf

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+export KERNEL=linux-5.0-rc1
+export IMG_NAME=wheezy
+
+#  -enable-kvm \
+#  -cpu kvm64,smap \
+qemu-system-x86_64 \
+  -kernel $KERNEL/arch/x86/boot/bzImage \
+  -append "console=ttyS0 root=/dev/sda debug earlyprintk=serial slub_debug=QUZ pti=off oops=panic ftrace_dump_on_oops nokaslr"\
+  -hda ${IMG_NAME}.img \
+  -net user,hostfwd=tcp::10021-:22 -net nic \
+  -nographic \
+  -m 512M \
+  -smp 2 \
+  -pidfile vm.pid \
+  2>&1 | tee vm.log

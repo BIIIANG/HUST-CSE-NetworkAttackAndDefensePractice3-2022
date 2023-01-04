@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Apr 27 06:27:55 2022 as: nmap -Pn -A -T4 -&#45;open -&#45;min-parallelism 64 -p- -oX 1.4-PortScanning.xml 192.168.43.38 -->
+<nmaprun scanner="nmap" args="nmap -Pn -A -T4 -&#45;open -&#45;min-parallelism 64 -p- -oX 1.4-PortScanning.xml 192.168.43.38" start="1651055275" startstr="Wed Apr 27 06:27:55 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.38" addrtype="ipv4"/>
+<address addr="90:78:41:CE:D5:47" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1651055276" endtime="1651055459"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.43.38" addrtype="ipv4"/>
+<address addr="90:78:41:CE:D5:47" addrtype="mac" vendor="Intel Corporate"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65505">
+<extrareasons reason="reset" count="65505" proto="tcp" ports="1-20,24,26-52,54-79,81-110,112-138,140-444,446-511,515-1098,1100-1523,1525-2048,2050-2120,2122-3305,3307-3631,3633-5431,5433-5899,5901-5999,6001-6666,6668-6696,6698-8008,8010-8179,8181-8786,8788-36971,36973-42190,42192-44156,44158-48065,48067-65535"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="vsftpd" version="2.3.4" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.4</cpe></service><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.43.97&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     vsFTPd 2.3.4 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.43.97&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     vsFTPd 2.3.4 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 60:0f:cf:e1:c0:5f:6a:74:d6:90:24:fa:c4:d5:6c:cd (DSA)&#xa;  2048 56:56:24:0f:21:1d:de:a7:2b:ae:61:b1:24:3d:e8:f3 (RSA)"><table>
+<elem key="fingerprint">600fcfe1c05f6a74d69024fac4d56ccd</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBALz4hsc8a2Srq4nlW960qV8xwBG0JC+jI7fWxm5METIJH4tKr/xUTwsTYEYnaZLzcOiy21D3ZvOwYb6AA3765zdgCd2Tgand7F0YD5UtXG7b7fbz99chReivL0SIWEG/E96Ai+pqYMP2WD5KaOJwSIXSUajnU5oWmY5x85sBw+XDAAAAFQDFkMpmdFQTF+oRqaoSNVU7Z+hjSwAAAIBCQxNKzi1TyP+QJIFa3M0oLqCVWI0We/ARtXrzpBOJ/dt0hTJXCeYisKqcdwdtyIn8OUCOyrIjqNuA2QW217oQ6wXpbFh+5AQm8Hl3b6C6o8lX3Ptw+Y4dp0lzfWHwZ/jzHwtuaDQaok7u1f971lEazeJLqfiWrAzoklqSWyDQJAAAAIA1lAD3xWYkeIeHv/R3P9i+XaoI7imFkMuYXCDTq843YU6Td+0mWpllCqAWUV/CQamGgQLtYy5S0ueoks01MoKdOMMhKVwqdr08nvCBdNKjIEd3gH6oBk/YRnjzxlEAYBsvCmM4a0jmhz0oNiRWlc/F+bkUeFKrBx/D2fdfZmhrGg==</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="bits">1024</elem>
+</table>
+<table>
+<elem key="fingerprint">5656240f211ddea72bae61b1243de8f3</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEAstqnuFMBOZvO3WTEjP4TUdjgWkIVNdTq6kboEDjteOfc65TlI7sRvQBwqAhQjeeyyIk8T55gMDkOD0akSlSXvLDcmcdYfxeIF0ZSuT+nkRhij7XSSA/Oc5QSk3sJ/SInfb78e3anbRHpmkJcVgETJ5WhKObUNf1AKZW++4Xlc63M4KI5cjvMMIPEVOyR3AKmI78Fo3HJjYucg87JjLeC66I7+dlEYX6zT8i1XYwa/L1vZ3qSJISGVu8kRPikMv/cNSvki4j+qDYyZ2E5497W87+Ed46/8P42LNGoOV8OcX/ro6pAcbEPUdUEfkJrqi2YXbhvwIJ0gFMb6wfe5cnQew==</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" product="Linux telnetd" ostype="Linux" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" product="Postfix smtpd" hostname=" metasploitable.localdomain" method="probed" conf="10"><cpe>cpe:/a:postfix:postfix</cpe></service><script id="ssl-cert" output="Subject: commonName=ubuntu804-base.localdomain/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX&#xa;Not valid before: 2010-03-17T14:07:45&#xa;Not valid after:  2010-04-16T14:07:45"><table key="subject">
+<elem key="commonName">ubuntu804-base.localdomain</elem>
+<elem key="countryName">XX</elem>
+<elem key="emailAddress">root@ubuntu804-base.localdomain</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ubuntu804-base.localdomain</elem>
+<elem key="countryName">XX</elem>
+<elem key="emailAddress">root@ubuntu804-base.localdomain</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">D6B41336339A95717B1BDE7C8375DA71B13CA97FFEAD641B77E94FAEBECAD4F8CBEFAEBB43792473FF3CE59E3B6DFCC8B1ACFA4C4D5E9B4C99540BD7A84A50BAA9DE1D1FF4E46B02A3F46B45CD4CAF8D8962338F65BB36619FC42C73C14E2EA0A8144E98704661BBD1B931DF8C99EE756B793C40A0AE9700909DDC990D33A4B5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2010-03-17T14:07:45</elem>
+<elem key="notAfter">2010-04-16T14:07:45</elem>
+</table>
+<elem key="md5">dcd9ad906c8f2f7374af383b25408828</elem>
+<elem key="sha1">ed093088706603bfd5dc237399b498da2d4d31c6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDWzCCAsQCCQD6+TpMf7a5zDANBgkqhkiG9w0BAQUFADCB8TELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czEjMCEGA1UEAxMadWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4xLjAsBgkqhkiG&#xa;9w0BCQEWH3Jvb3RAdWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4wHhcNMTAwMzE3&#xa;MTQwNzQ1WhcNMTAwNDE2MTQwNzQ1WjCB8TELMAkGA1UEBhMCWFgxKjAoBgNVBAgT&#xa;IVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzETMBEGA1UEBxMKRXZl&#xa;cnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09mZmljZSBmb3IgQ29t&#xa;cGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWlyczEjMCEGA1UEAxMa&#xa;dWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4xLjAsBgkqhkiG9w0BCQEWH3Jvb3RA&#xa;dWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0A&#xa;MIGJAoGBANa0EzYzmpVxexvefIN12nGxPKl//q1kG3fpT66+ytT4y++uu0N5JHP/&#xa;POWeO238yLGs+kxNXptMmVQL16hKULqp3h0f9ORrAqP0a0XNTK+NiWIzj2W7NmGf&#xa;xCxzwU4uoKgUTphwRmG70bkx34yZ7nVreTxAoK6XAJCd3JkNM6S1AgMBAAEwDQYJ&#xa;KoZIhvcNAQEFBQADgYEAkqS0uBRVYyVRSgvDKiLPOvgXagzPZqqnZS9Ibc3jPlyf&#xa;d2zURFQfHoRPjtSN3awtiAkhqNpWLKkFPEloNRl1DNpTI4iIGS10JsEiZe4RaINq&#xa;U0qcJ8ugtOmNKQyyPBhcZ8xTph4w0Komex6uQLkpAWwuvKIZlHwVbo0wOPbKLnU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+</table>
+</script><script id="ssl-date" output="2022-04-27T10:30:55+00:00; +1s from scanner time."><elem key="delta">1.0</elem>
+<elem key="date">2022-04-27T10:30:55+00:00</elem>
+</script><script id="smtp-commands" output="metasploitable.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="ISC BIND" version="9.4.2" method="probed" conf="10"><cpe>cpe:/a:isc:bind:9.4.2</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: 9.4.2"><elem key="bind.version">9.4.2</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.2.8" extrainfo="(Ubuntu) DAV/2" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.8</cpe></service><script id="http-title" output="Metasploitable2 - Linux"><elem key="title">Metasploitable2 - Linux</elem>
+</script><script id="http-server-header" output="Apache/2.2.8 (Ubuntu) DAV/2"><elem>Apache/2.2.8 (Ubuntu) DAV/2</elem>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2            111/tcp   rpcbind&#xa;  100000  2            111/udp   rpcbind&#xa;  100003  2,3,4       2049/tcp   nfs&#xa;  100003  2,3,4       2049/udp   nfs&#xa;  100005  1,2,3      41720/udp   mountd&#xa;  100005  1,2,3      42191/tcp   mountd&#xa;  100021  1,3,4      44157/tcp   nlockmgr&#xa;  100021  1,3,4      58446/udp   nlockmgr&#xa;  100024  1          36467/udp   status&#xa;  100024  1          48066/tcp   status&#xa;"><table key="100005">
+<table key="udp">
+<elem key="port">41720</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">42191</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+</table>
+</table>
+<table key="100003">
+<table key="udp">
+<elem key="port">2049</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">2049</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+</table>
+<table key="100024">
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">36467</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">48066</elem>
+</table>
+</table>
+<table key="100021">
+<table key="udp">
+<elem key="port">58446</elem>
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+<table key="tcp">
+<elem key="port">44157</elem>
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+</table>
+</table>
+<table key="100000">
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" product="Samba smbd" version="3.0.20-Debian" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="512"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="exec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="513"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1099"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="java-rmi" product="GNU Classpath grmiregistry" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="1524"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="bindshell" product="Metasploitable root shell" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nfs" version="2-4" extrainfo="RPC #100003" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2121"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" product="ProFTPD" version="1.3.1" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.1</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" product="MySQL" version="5.0.51a-3ubuntu5" method="probed" conf="10"><cpe>cpe:/a:mysql:mysql:5.0.51a-3ubuntu5</cpe></service><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.0.51a-3ubuntu5&#xa;  Thread ID: 9&#xa;  Capabilities flags: 43564&#xa;  Some Capabilities: Support41Auth, Speaks41ProtocolNew, LongColumnFlag, SupportsTransactions, SwitchToSSLAfterHandshake, SupportsCompression, ConnectWithDatabase&#xa;  Status: Autocommit&#xa;  Salt: WZ&gt;hov&amp;SQz44HK&quot;bL3YI"><elem key="Protocol">10</elem>
+<elem key="Version">5.0.51a-3ubuntu5</elem>
+<elem key="Thread ID">9</elem>
+<elem key="Capabilities flags">43564</elem>
+<table key="Some Capabilities">
+<elem>Support41Auth</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>LongColumnFlag</elem>
+<elem>SupportsTransactions</elem>
+<elem>SwitchToSSLAfterHandshake</elem>
+<elem>SupportsCompression</elem>
+<elem>ConnectWithDatabase</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">WZ&gt;hov&amp;SQz44HK&quot;bL3YI</elem>
+</script></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="distccd" product="distccd" version="v1" extrainfo="(GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4)" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5432"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="postgresql" product="PostgreSQL DB" version="8.3.0 - 8.3.7" method="probed" conf="10"><cpe>cpe:/a:postgresql:postgresql:8.3</cpe></service><script id="ssl-cert" output="Subject: commonName=ubuntu804-base.localdomain/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX&#xa;Not valid before: 2010-03-17T14:07:45&#xa;Not valid after:  2010-04-16T14:07:45"><table key="subject">
+<elem key="commonName">ubuntu804-base.localdomain</elem>
+<elem key="countryName">XX</elem>
+<elem key="emailAddress">root@ubuntu804-base.localdomain</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ubuntu804-base.localdomain</elem>
+<elem key="countryName">XX</elem>
+<elem key="emailAddress">root@ubuntu804-base.localdomain</elem>
+<elem key="localityName">Everywhere</elem>
+<elem key="organizationName">OCOSA</elem>
+<elem key="organizationalUnitName">Office for Complication of Otherwise Simple Affairs</elem>
+<elem key="stateOrProvinceName">There is no such thing outside US</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">D6B41336339A95717B1BDE7C8375DA71B13CA97FFEAD641B77E94FAEBECAD4F8CBEFAEBB43792473FF3CE59E3B6DFCC8B1ACFA4C4D5E9B4C99540BD7A84A50BAA9DE1D1FF4E46B02A3F46B45CD4CAF8D8962338F65BB36619FC42C73C14E2EA0A8144E98704661BBD1B931DF8C99EE756B793C40A0AE9700909DDC990D33A4B5</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2010-03-17T14:07:45</elem>
+<elem key="notAfter">2010-04-16T14:07:45</elem>
+</table>
+<elem key="md5">dcd9ad906c8f2f7374af383b25408828</elem>
+<elem key="sha1">ed093088706603bfd5dc237399b498da2d4d31c6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDWzCCAsQCCQD6+TpMf7a5zDANBgkqhkiG9w0BAQUFADCB8TELMAkGA1UEBhMC&#xa;WFgxKjAoBgNVBAgTIVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzET&#xa;MBEGA1UEBxMKRXZlcnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09m&#xa;ZmljZSBmb3IgQ29tcGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWly&#xa;czEjMCEGA1UEAxMadWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4xLjAsBgkqhkiG&#xa;9w0BCQEWH3Jvb3RAdWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4wHhcNMTAwMzE3&#xa;MTQwNzQ1WhcNMTAwNDE2MTQwNzQ1WjCB8TELMAkGA1UEBhMCWFgxKjAoBgNVBAgT&#xa;IVRoZXJlIGlzIG5vIHN1Y2ggdGhpbmcgb3V0c2lkZSBVUzETMBEGA1UEBxMKRXZl&#xa;cnl3aGVyZTEOMAwGA1UEChMFT0NPU0ExPDA6BgNVBAsTM09mZmljZSBmb3IgQ29t&#xa;cGxpY2F0aW9uIG9mIE90aGVyd2lzZSBTaW1wbGUgQWZmYWlyczEjMCEGA1UEAxMa&#xa;dWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4xLjAsBgkqhkiG9w0BCQEWH3Jvb3RA&#xa;dWJ1bnR1ODA0LWJhc2UubG9jYWxkb21haW4wgZ8wDQYJKoZIhvcNAQEBBQADgY0A&#xa;MIGJAoGBANa0EzYzmpVxexvefIN12nGxPKl//q1kG3fpT66+ytT4y++uu0N5JHP/&#xa;POWeO238yLGs+kxNXptMmVQL16hKULqp3h0f9ORrAqP0a0XNTK+NiWIzj2W7NmGf&#xa;xCxzwU4uoKgUTphwRmG70bkx34yZ7nVreTxAoK6XAJCd3JkNM6S1AgMBAAEwDQYJ&#xa;KoZIhvcNAQEFBQADgYEAkqS0uBRVYyVRSgvDKiLPOvgXagzPZqqnZS9Ibc3jPlyf&#xa;d2zURFQfHoRPjtSN3awtiAkhqNpWLKkFPEloNRl1DNpTI4iIGS10JsEiZe4RaINq&#xa;U0qcJ8ugtOmNKQyyPBhcZ8xTph4w0Komex6uQLkpAWwuvKIZlHwVbo0wOPbKLnU=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2022-04-27T10:30:55+00:00; +2s from scanner time."><elem key="delta">2.0</elem>
+<elem key="date">2022-04-27T10:30:55+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="vnc" product="VNC" extrainfo="protocol 3.3" method="probed" conf="10"/><script id="vnc-info" output="&#xa;  Protocol version: 3.3&#xa;  Security types: &#xa;    VNC Authentication (2)"><elem key="Protocol version">3.3</elem>
+<table key="Security types">
+<table>
+<elem key="name">VNC Authentication</elem>
+<elem key="type">2</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="6000"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="X11" extrainfo="access denied" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="6667"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="irc" product="UnrealIRCd" hostname="irc.Metasploitable.LAN" method="probed" conf="10"><cpe>cpe:/a:unrealircd:unrealircd</cpe></service></port>
+<port protocol="tcp" portid="6697"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="irc" product="UnrealIRCd" hostname="irc.Metasploitable.LAN" method="probed" conf="10"><cpe>cpe:/a:unrealircd:unrealircd</cpe></service><script id="irc-info" output="&#xa;  users: 2&#xa;  servers: 1&#xa;  lusers: 2&#xa;  lservers: 0&#xa;  server: irc.Metasploitable.LAN&#xa;  version: Unreal3.2.8.1. irc.Metasploitable.LAN &#xa;  uptime: 0 days, 0:09:01&#xa;  source ident: nmap&#xa;  source host: Test-B025CB0A&#xa;  error: Closing Link: sgxdkbgqy[kali] (Quit: sgxdkbgqy)"><elem key="users">2</elem>
+<elem key="servers">1</elem>
+<elem key="lusers">2</elem>
+<elem key="lservers">0</elem>
+<elem key="server">irc.Metasploitable.LAN</elem>
+<elem key="version">Unreal3.2.8.1. irc.Metasploitable.LAN </elem>
+<elem key="uptime">0 days, 0:09:01</elem>
+<elem key="source ident">nmap</elem>
+<elem key="source host">Test-B025CB0A</elem>
+<elem key="error">Closing Link: sgxdkbgqy[kali] (Quit: sgxdkbgqy)</elem>
+</script></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/><script id="ajp-methods" output="Failed to get a valid response for the OPTION request"/></port>
+<port protocol="tcp" portid="8180"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache Tomcat/Coyote JSP engine" version="1.1" method="probed" conf="10"><cpe>cpe:/a:apache:coyote_http_connector:1.1</cpe></service><script id="http-title" output="Apache Tomcat/5.5"><elem key="title">Apache Tomcat/5.5</elem>
+</script><script id="http-server-header" output="Apache-Coyote/1.1"><elem>Apache-Coyote/1.1</elem>
+</script><script id="http-favicon" output="Apache Tomcat"/></port>
+<port protocol="tcp" portid="8787"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="drb" product="Ruby DRb RMI" extrainfo="Ruby 1.8; path /usr/lib/ruby/1.8/drb" method="probed" conf="10"><cpe>cpe:/a:ruby-lang:ruby:1.8</cpe></service></port>
+<port protocol="tcp" portid="36972"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="java-rmi" product="GNU Classpath grmiregistry" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="42191"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="44157"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="nlockmgr" version="1-4" extrainfo="RPC #100021" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="48066"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30409"/>
+<osmatch name="Linux 2.6.9 - 2.6.33" accuracy="100" line="59346">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="274" lastboot="Wed Apr 27 06:26:26 2022"/>
+<distance value="1"/>
+<tcpsequence index="205" difficulty="Good luck!" values="B6A589F6,B6D89D69,B6D4508D,B7A5B84F,B76584C0,B756DF36"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="636B,6375,637F,6389,6393,639D"/>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Unix (Samba 3.0.20-Debian)&#xa;  Computer name: metasploitable&#xa;  NetBIOS computer name: &#xa;  Domain name: localdomain&#xa;  FQDN: metasploitable.localdomain&#xa;  System time: 2022-04-27T06:30:47-04:00&#xa;"><elem key="os">Unix</elem>
+<elem key="lanmanager">Samba 3.0.20-Debian</elem>
+<elem key="server"></elem>
+<elem key="date">2022-04-27T06:30:47-04:00</elem>
+<elem key="fqdn">metasploitable.localdomain</elem>
+<elem key="domain_dns">localdomain</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="clock-skew" output="mean: 1h00m02s, deviation: 2h00m01s, median: 1s"><elem key="count">4</elem>
+<elem key="mean">3602</elem>
+<elem key="median">1</elem>
+<elem key="stddev">7201</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="nbstat" output="NetBIOS name: METASPLOITABLE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"/></hostscript><trace>
+<hop ttl="1" ipaddr="192.168.43.38" rtt="8.43"/>
+</trace>
+<times srtt="8432" rttvar="2013" to="100000"/>
+</host>
+<runstats><finished time="1651055460" timestr="Wed Apr 27 06:31:00 2022" summary="Nmap done at Wed Apr 27 06:31:00 2022; 1 IP address (1 host up) scanned in 185.69 seconds" elapsed="185.69" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

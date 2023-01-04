@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export IMG_NAME=wheezy
+
+scp -r -i ${IMG_NAME}.id_rsa -P 10021 -o "StrictHostKeyChecking no" $@ drill@localhost:/home/drill/
